@@ -1,0 +1,30 @@
+DATASET_MAP = {
+    'opinionqa': {
+        'source': 'ATP',
+        'qkeypath': "opinionqa_question_keys.json",
+        'qstringpath': "opinionqa_question_strings.json",
+        'valid_traits': ["age", "race", "sex", "education","income",
+                         "cregion", "relig", "polparty", "polideology"],
+        'use_selective_subgroups': False,
+        'min_questions_per_indiv': 30,
+    },
+    'twin': {
+        'source': 'Twin',
+        'qkeypath': "twin_question_keys.json",
+        'qstringpath': "twin_question_strings.json",
+        'valid_traits': ["age", "race", "sex", "education","income",
+                         "cregion", "relig", "polparty", "polideology"],
+        'use_selective_subgroups': False,
+        'min_questions_per_indiv': 30,
+    },
+    'eedi': {},
+    'dunning_kruger': {
+        'source': 'dunning_kruger',
+        'qkeypath': "dunning_kruger_question_keys.json",
+        'qstringpath': "dunning_kruger_question_strings.json",
+        'valid_traits': ["pre_accuracy", "pre_percentile", "pre_average_difficulty", "pre_self_difficulty",
+                         "post_accuracy", "post_percentile", "post_average_difficulty", "post_self_difficulty"],
+        'use_selective_subgroups': False,
+        'min_questions_per_indiv': 20,
+    },
+}

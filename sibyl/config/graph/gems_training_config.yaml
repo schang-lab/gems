@@ -1,0 +1,127 @@
+encoder:
+  gnn_input_embed_dim:
+    indiv: 8 # this is multiplied by number of traits w/ "trait" encoding
+    subgroup: 64
+    question: 64
+  encoding:
+    indiv: "fixed" # "fixed" (fixed embedding of vector 1) or "trait" (encoding based on individual features)
+    subgroup: "one_hot" # "one_hot" (learnable embedding table)
+    question: "one_hot" # "one_hot" (learnable embedding table) or "random"
+  input_feature_dropout: 0.3
+
+decoder:
+  indiv_question: # this is the main decoder used in paper, Figure 2.
+    decoder_arch: "dot_product" # "bilinear" or "mlp" or "dot_product". Default is dot-product (Fig. 2)
+    embed_dim: [64, 64] # [indiv_embed_dim, question_embed_dim]. Need to be same for dot-product decoder.
+    learnable_temp: true # tau component for scaling dot-product scores
+    mlp_n_layers: 3 # MLP-decoder (if used) specific parameters
+    mlp_hidden_dims: [16, 8]
+    mlp_nonlin_fn: "relu"
+    mlp_p_dropout: 0.2
+  subgroup_question: # optional decoder between subgroup and question nodes. Not used in paper experiments.
+    decoder_arch: "dot_product" # "bilinear" or "mlp" or "dot_product"
+    embed_dim: [64, 64]
+    learnable_temp: true
+    mlp_n_layers: 3
+    mlp_hidden_dims: [16, 8]
+    mlp_nonlin_fn: "relu"
+    mlp_p_dropout: 0.2
+
+gnn:
+  gnn_arch: "rgcn" # "gat", "sage", "rgcn"
+  gnn_output_embed_dim:
+    indiv: 64
+    subgroup: 64
+    question: 64
+  gnn_num_layers: 2
+  gnn_hidden_dims: # list length equal to gnn_num_layers
+    indiv: [64, 64]
+    subgroup: [64, 64]
+    question: [64, 64]
+  nonlin_fn:
+    indiv: "relu"
+    subgroup: "relu"
+    question: "relu"
+  aggr_method: "mean" # "mean", "sum"
+  hetero_aggr_method: "sum" # "mean", "sum", "maskedmean" (custom)
+  gnn_p_dropout: 0.5
+  add_self_loops: false
+  gnn_n_heads: [4, 1]
+  concat: true
+  attn_dropout: 0.4
+  negative_slope: 0.2
+  norm_type: "layer" # post-layer normalization: "layer" (layernorm), "none"
+  residual: false # residual connection
+
+dataset:
+  dataset_name: "opinionqa" # "opinionqa", "twin", "dunning_kruger"
+  split_filepath: "outputs/dataset_splits/opinionqa_individual_val0p05_test0p60_evalpartial_0p40_seed42.jsonl"
+  exit_undefined_traits: false # if true, individuals with missing indiv. feature skipped
+  node_types: ["indiv", "question", "subgroup"]
+  filtering:
+    n_indiv_sample_per_wave: 100000
+
+split_info:
+  transductive:
+    train:
+      indiv_question: 0.5 # how much of edges remain in training graph (used as message-passing edges)
+      intact_indiv: 0.0 # how much of individual nodes remain not edge-removed
+  inductive:
+    train:
+      indiv: 0.0 # how much of train-indiv nodes used for inductive learning
+      question: 0.0 # how much of train-question nodes used for inductive learning
+  graphsaint: # graph subsampling settings. Details in appendix
+    use: true
+    n_sample: 50 # number of sampling. In each sample of train graph, message-passing / supervision edges are randomly constructed.
+    fraction: 1.0 # fraction of nodes to sample in each sampling. Default to 1.0 (use all nodes)
+  new_question:
+    is_this: false # if true, transductive training setup during GEMS training (details in experiment section)
+    fraction: 0.05 # fraction of response edges to use as validation
+
+training:
+  n_epochs: 1000
+  patience: ${training.n_epochs}
+  learning_rate: # configure learning rates
+    encoder:
+      indiv: 5e-4
+      subgroup: 5e-4
+      question: 5e-4
+    decoder:
+      indiv_question: 5e-4
+      subgroup_question: 5e-4
+    graphnn: 5e-4
+  weight_decay: # configure weight decays
+    encoder:
+      indiv: 1e-3
+      subgroup: 1e-3
+      question: 1e-3
+    decoder:
+      indiv_question: 1e-3
+      subgroup_question: 1e-3
+    graphnn: 1e-3
+  scheduler: # configure learning rate schedulers (cosine annealing default)
+    encoder:
+      indiv: "CosineAnnealingLR"
+      subgroup: "CosineAnnealingLR"
+      question: "CosineAnnealingLR"
+    decoder:
+      indiv_question: "CosineAnnealingLR"
+      subgroup_question: "CosineAnnealingLR"
+    graphnn: "CosineAnnealingLR"
+  inductive_loss_weight: 1.0
+  transductive_loss_weight: 1.0
+  reduction: "unweighted" # "unweighted" or "weighted" (weighting by 1/log(#_options)) for ce loss computation
+  eval_every: 1 # evaluate (either val and/or test) every n epochs
+  label_smoothing_alpha: 1.0 # 1.0 means no smoothing. applies exclusive label smoothing.
+  max_grad_norm: 1.0 # for gradient clipping
+  grad_norm_type: 2.0 # for gradient clipping, p-norm
+  seed: 0 # random seed
+  accum_steps: 1 # gradient accumulation steps (default to 1)
+  
+experiment:
+  save_model: false # whether to save model checkpoint
+  save_embedding: false # whether to save learned node embeddings
+  save_criterion: acc # criterion for saving the best model checkpoint
+  use_logger: true # if true, stdout logs are saved to a file
+  verbose: true
+  save_data: false # if true, save the graph into disk. Reduces data loading time during dev.

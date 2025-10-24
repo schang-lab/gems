@@ -1,0 +1,1 @@
+Locate .sav files directly downloaded from the Pew Reserach American Trends Panels.
