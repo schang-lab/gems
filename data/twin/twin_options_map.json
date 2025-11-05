@@ -1,0 +1,935 @@
+{
+    "BLOCK0QID11_W1": {
+        "1.0": "northeast",
+        "2.0": "midwest",
+        "3.0": "south",
+        "4.0": "west",
+        "5.0": "west"
+    },
+    "BLOCK0QID12_W1": {
+        "1.0": "male",
+        "2.0": "female"
+    },
+    "BLOCK0QID13_W1": {
+        "1.0": "18-29",
+        "2.0": "30-49",
+        "3.0": "50-64",
+        "4.0": "65+"
+    },
+    "BLOCK0QID14_W1": {
+        "1.0": "less than high school",
+        "2.0": "high school graduate",
+        "3.0": "some college, no degree",
+        "4.0": "associate's degree",
+        "5.0": "college graduate/some postgrad",
+        "6.0": "postgraduate"
+    },
+    "BLOCK0QID15_W1": {
+        "1.0": "white",
+        "2.0": "black",
+        "3.0": "asian",
+        "4.0": "hispanic",
+        "5.0": "other"
+    },
+    "BLOCK0QID16_W1": {
+        "1.0": "yes",
+        "2.0": "no"
+    },
+    "BLOCK0QID17_W1": {
+        "1.0": "married",
+        "2.0": "living with a partner",
+        "3.0": "divorced",
+        "4.0": "separated",
+        "5.0": "widowed",
+        "6.0": "never been married"
+    },
+    "BLOCK0QID18_W1": {
+        "1.0": "protestant",
+        "2.0": "roman catholic",
+        "3.0": "mormon",
+        "4.0": "orthodox",
+        "5.0": "jewish",
+        "6.0": "muslim",
+        "7.0": "buddhist",
+        "8.0": "hindu",
+        "9.0": "atheist",
+        "10.0": "agnostic",
+        "11.0": "other",
+        "12.0": "nothing in particular"
+    },
+    "BLOCK0QID19_W1": {
+        "1.0": "more than once a week",
+        "2.0": "once a week",
+        "3.0": "once or twice a month",
+        "4.0": "a few times a year",
+        "5.0": "seldom",
+        "6.0": "never"
+    },
+    "BLOCK0QID20_W1": {
+        "1.0": "republican",
+        "2.0": "democrat",
+        "3.0": "independent",
+        "4.0": "something else"
+    },
+    "BLOCK0QID21_W1": {
+        "1.0": "less than $30,000",
+        "2.0": "$30,000-$50,000",
+        "3.0": "$50,000-$75,000",
+        "4.0": "$75,000-$100,000",
+        "5.0": "$100,000 or more"
+    },
+    "BLOCK0QID22_W1": {
+        "1.0": "very conservative",
+        "2.0": "conservative",
+        "3.0": "moderate",
+        "4.0": "liberal",
+        "5.0": "very liberal"
+    },
+    "BLOCK0QID23_W1": {
+        "1.0": "1",
+        "2.0": "2",
+        "3.0": "3",
+        "4.0": "4",
+        "5.0": "more than 4"
+    },
+    "BLOCK0QID24_W1": {
+        "1.0": "full-time employment",
+        "2.0": "part-time employment",
+        "3.0": "unemployed",
+        "4.0": "self-employed",
+        "5.0": "home-maker",
+        "6.0": "student",
+        "7.0": "retired"
+    },
+    "BLOCK2QID56_W1": {
+        "1.0": "A",
+        "2.0": "B",
+        "3.0": "C",
+        "4.0": "D",
+        "5.0": "E",
+        "6.0": "F"
+    },
+    "BLOCK2QID57_W1": {
+        "1.0": "A",
+        "2.0": "B",
+        "3.0": "C",
+        "4.0": "D",
+        "5.0": "E",
+        "6.0": "F"
+    },
+    "BLOCK2QID58_W1": {
+        "1.0": "A",
+        "2.0": "B",
+        "3.0": "C",
+        "4.0": "D",
+        "5.0": "E",
+        "6.0": "F"
+    },
+    "BLOCK2QID59_W1": {
+        "1.0": "A",
+        "2.0": "B",
+        "3.0": "C",
+        "4.0": "D",
+        "5.0": "E",
+        "6.0": "F",
+        "7.0": "G",
+        "8.0": "H"
+    },
+    "BLOCK2QID60_W1": {
+        "1.0": "A",
+        "2.0": "B",
+        "3.0": "C",
+        "4.0": "D",
+        "5.0": "E",
+        "6.0": "F",
+        "7.0": "G",
+        "8.0": "H"
+    },
+    "BLOCK2QID61_W1": {
+        "1.0": "A",
+        "2.0": "B",
+        "3.0": "C",
+        "4.0": "D",
+        "5.0": "E",
+        "6.0": "F",
+        "7.0": "G",
+        "8.0": "H"
+    },
+    "BLOCK2QID63_W1": {
+        "1.0": "acquiesce",
+        "2.0": "extricate",
+        "3.0": "divulge",
+        "4.0": "concoct",
+        "5.0": "ransack"
+    },
+    "BLOCK2QID64_W1": {
+        "1.0": "harass",
+        "2.0": "repulse",
+        "3.0": "console",
+        "4.0": "appropriate",
+        "5.0": "congregate"
+    },
+    "BLOCK2QID65_W1": {
+        "1.0": "purge",
+        "2.0": "spurn",
+        "3.0": "entrance",
+        "4.0": "exert",
+        "5.0": "beseech"
+    },
+    "BLOCK2QID66_W1": {
+        "1.0": "ecstatic",
+        "2.0": "heinous",
+        "3.0": "stealthy",
+        "4.0": "flimsy",
+        "5.0": "facile"
+    },
+    "BLOCK2QID67_W1": {
+        "1.0": "bizarre",
+        "2.0": "ascetic",
+        "3.0": "sagacious",
+        "4.0": "lineal",
+        "5.0": "irritable"
+    },
+    "BLOCK2QID68_W1": {
+        "1.0": "crave",
+        "2.0": "claim",
+        "3.0": "avenge",
+        "4.0": "clutch",
+        "5.0": "comply"
+    },
+    "BLOCK2QID69_W1": {
+        "1.0": "premeditate",
+        "2.0": "irradiate",
+        "3.0": "vacilate",
+        "4.0": "recapitulate",
+        "5.0": "furbish"
+    },
+    "BLOCK2QID70_W1": {
+        "1.0": "contrite",
+        "2.0": "inexhaustible",
+        "3.0": "impervious",
+        "4.0": "arduous",
+        "5.0": "slothful"
+    },
+    "BLOCK2QID71_W1": {
+        "1.0": "despondency",
+        "2.0": "mediocrity",
+        "3.0": "serenity",
+        "4.0": "incongruity",
+        "5.0": "assiduity"
+    },
+    "BLOCK2QID72_W1": {
+        "1.0": "refractory",
+        "2.0": "fiscal",
+        "3.0": "destitute",
+        "4.0": "tolerable",
+        "5.0": "diligent"
+    },
+    "BLOCK2QID74_W1": {
+        "1.0": "famished",
+        "2.0": "finished",
+        "3.0": "finicky",
+        "4.0": "fulfilled",
+        "5.0": "fortunate"
+    },
+    "BLOCK2QID75_W1": {
+        "1.0": "distasteful",
+        "2.0": "egoistical",
+        "3.0": "alone",
+        "4.0": "ugly",
+        "5.0": "recalcitrant"
+    },
+    "BLOCK2QID76_W1": {
+        "1.0": "happy",
+        "2.0": "deadly",
+        "3.0": "gregarious",
+        "4.0": "manly",
+        "5.0": "varied"
+    },
+    "BLOCK2QID77_W1": {
+        "1.0": "adore",
+        "2.0": "despair",
+        "3.0": "abate",
+        "4.0": "deplore",
+        "5.0": "attach"
+    },
+    "BLOCK2QID78_W1": {
+        "1.0": "garrulous",
+        "2.0": "magnificent",
+        "3.0": "grandiloquent",
+        "4.0": "taciturn",
+        "5.0": "calculating"
+    },
+    "BLOCK2QID79_W1": {
+        "1.0": "birth",
+        "2.0": "brevity",
+        "3.0": "abundance",
+        "4.0": "splendor",
+        "5.0": "renaissance"
+    },
+    "BLOCK2QID81_W1": {
+        "1.0": "sallow",
+        "2.0": "affiliated",
+        "3.0": "emaciated",
+        "4.0": "entrepreneur",
+        "5.0": "anemic"
+    },
+    "BLOCK2QID82_W1": {
+        "1.0": "teutonic",
+        "2.0": "healthful",
+        "3.0": "irrelevant",
+        "4.0": "massive",
+        "5.0": "puny"
+    },
+    "BLOCK2QID83_W1": {
+        "1.0": "bankrupt",
+        "2.0": "loose",
+        "3.0": "livid",
+        "4.0": "superficial",
+        "5.0": "profound"
+    },
+    "BLOCK2QID80_W1": {
+        "1.0": "germinal",
+        "2.0": "antiseptic",
+        "3.0": "incessant",
+        "4.0": "summery",
+        "5.0": "wintry"
+    },
+    "BLOCK2QID278_W1": {
+        "1.0": "that it is certain that the glock is a YOF",
+        "2.0": "that it is certain that the glock is not a YOF",
+        "3.0": "that it is not certain whether the glock is a YOF or not"
+    },
+    "BLOCK2QID268_W1": {
+        "1.0": "that it is certain that the glock is a YOF",
+        "2.0": "that it is certain that the glock is not a YOF",
+        "3.0": "that it is not certain whether the glock is a YOF or not"
+    },
+    "BLOCK2QID269_W1": {
+        "1.0": "that it is certain that the koy is a XAR",
+        "2.0": "that it is certain that the koy is not a XAR",
+        "3.0": "that it is not certain whether the koy is a XAR or not"
+    },
+    "BLOCK2QID270_W1": {
+        "1.0": "that it is certain that the koy is a XAR",
+        "2.0": "that it is certain that the koy is not a XAR",
+        "3.0": "that it is not certain whether the koy is a XAR or not"
+    },
+    "BLOCK2QID279_W1": {
+        "1.0": "Yes",
+        "2.0": "No"
+    },
+    "BLOCK2QID271_W1": {
+        "1.0": "Yes",
+        "2.0": "No"
+    },
+    "BLOCK2QID272_W1": {
+        "1.0": "Yes",
+        "2.0": "No"
+    },
+    "BLOCK2QID273_W1": {
+        "1.0": "Yes",
+        "2.0": "No"
+    },
+    "BLOCK2QID274_W1": {
+        "1.0": "Yes",
+        "2.0": "No"
+    },
+    "BLOCK2QID275_W1": {
+        "1.0": "Yes",
+        "2.0": "No"
+    },
+    "BLOCK2QID276_W1": {
+        "1.0": "Yes",
+        "2.0": "No"
+    },
+    "BLOCK2QID277_W1": {
+        "1.0": "Yes",
+        "2.0": "No"
+    },
+    "BLOCK4QID224_W1": {
+        "1.0": "$0 for myself, $5 to the other person.",
+        "2.0": "$1 for myself, $4 to the other person.",
+        "3.0": "$2 for myself, $3 to the other person.",
+        "4.0": "$3 for myself, $2 to the other person.",
+        "5.0": "$4 for myself, $1 to the other person.",
+        "6.0": "$5 for myself, $0 to the other person."
+    },
+    "BLOCK4QID225_W1": {
+        "1.0": "I would accept the offer: $0 for other, $5 for me",
+        "2.0": "I would reject the offer: $0 for both"
+    },
+    "BLOCK4QID226_W1": {
+        "1.0": "I would accept the offer: $1 for other, $4 for me",
+        "2.0": "I would reject the offer: $0 for both"
+    },
+    "BLOCK4QID227_W1": {
+        "1.0": "I would accept the offer: $2 for other, $3 for me",
+        "2.0": "I would reject the offer: $0 for both"
+    },
+    "BLOCK4QID228_W1": {
+        "1.0": "I would accept the offer: $3 for other, $2 for me",
+        "2.0": "I would reject the offer: $0 for both"
+    },
+    "BLOCK4QID229_W1": {
+        "1.0": "I would accept the offer: $4 for other, $1 for me",
+        "2.0": "I would reject the offer: $0 for both"
+    },
+    "BLOCK4QID230_W1": {
+        "1.0": "I would accept the offer: $5 for other, $0 for me",
+        "2.0": "I would reject the offer: $0 for both"
+    },
+    "BLOCK4QID149_W1": {
+        "1.0": "Person A",
+        "2.0": "Person B"
+    },
+    "BLOCK4QID150_W1": {
+        "1.0": "Person A",
+        "2.0": "Person B"
+    },
+    "BLOCK4QID151_W1": {
+        "1.0": "Person A",
+        "2.0": "Person B"
+    },
+    "BLOCK4QID152_W1": {
+        "1.0": "Person A",
+        "2.0": "Person B"
+    },
+    "BLOCK6QID36_W1": {
+        "1.0": "True",
+        "2.0": "False"
+    },
+    "BLOCK6QID37_W1": {
+        "1.0": "More than today with the money on this account",
+        "2.0": "Exactly the same as today with the money in this account",
+        "3.0": "Less than today with the money in this account",
+        "4.0": "Do not know"
+    },
+    "BLOCK6QID38_W1": {
+        "1.0": "Savings account",
+        "2.0": "Stocks",
+        "3.0": "Bonds",
+        "4.0": "Do not know"
+    },
+    "BLOCK6QID39_W1": {
+        "1.0": "True",
+        "2.0": "False"
+    },
+    "BLOCK6QID40_W1": {
+        "1.0": "Increases",
+        "2.0": "Decreases",
+        "3.0": "Stays the same",
+        "4.0": "Do not know"
+    },
+    "BLOCK6QID41_W1": {
+        "1.0": "Savings account",
+        "2.0": "Stocks",
+        "3.0": "Bonds",
+        "4.0": "Do not know"
+    },
+    "BLOCK6QID42_W1": {
+        "1.0": "True",
+        "2.0": "False"
+    },
+    "BLOCK6QID217_W1": {
+        "1.0": "Yes",
+        "2.0": "No"
+    },
+    "BLOCK6QID218_W1": {
+        "1.0": "Yes",
+        "2.0": "No"
+    },
+    "BLOCK6QID219_W1": {
+        "1.0": "Yes",
+        "2.0": "No"
+    },
+    "BLOCK6QID220_W1": {
+        "1.0": "Yes",
+        "2.0": "No"
+    },
+    "BLOCK9QID117_W1": {
+        "1.0": "I would keep $0 for myself and send $5 to the other person.",
+        "2.0": "I would keep $1 for myself and send $4 to the other person.",
+        "3.0": "I would keep $2 for myself and send $3 to the other person.",
+        "4.0": "I would keep $3 for myself and send $2 to the other person.",
+        "5.0": "I would keep $4 for myself and send $1 to the other person.",
+        "6.0": "I would keep $5 for myself and send $0 to the other person."
+    },
+    "BLOCK9QID118_W1": {
+        "1.0": "I would keep $0 for myself and send $15 to the other person.",
+        "2.0": "I would keep $1 for myself and send $14 to the other person.",
+        "3.0": "I would keep $2 for myself and send $13 to the other person.",
+        "4.0": "I would keep $3 for myself and send $12 to the other person.",
+        "5.0": "I would keep $4 for myself and send $11 to the other person.",
+        "6.0": "I would keep $5 for myself and send $10 to the other person.",
+        "7.0": "I would keep $6 for myself and send $9 to the other person.",
+        "8.0": "I would keep $7 for myself and send $8 to the other person.",
+        "9.0": "I would keep $8 for myself and send $7 to the other person.",
+        "10.0": "I would keep $9 for myself and send $6 to the other person.",
+        "11.0": "I would keep $10 for myself and send $5 to the other person.",
+        "12.0": "I would keep $11 for myself and send $4 to the other person.",
+        "13.0": "I would keep $12 for myself and send $3 to the other person.",
+        "14.0": "I would keep $13 for myself and send $2 to the other person.",
+        "15.0": "I would keep $14 for myself and send $1 to the other person.",
+        "16.0": "I would keep $15 for myself and send $0 to the other person."
+    },
+    "BLOCK9QID119_W1": {
+        "1.0": "I would keep $0 for myself and send $12 to the other person.",
+        "2.0": "I would keep $1 for myself and send $11 to the other person.",
+        "3.0": "I would keep $2 for myself and send $10 to the other person.",
+        "4.0": "I would keep $3 for myself and send $9 to the other person.",
+        "5.0": "I would keep $4 for myself and send $8 to the other person.",
+        "6.0": "I would keep $5 for myself and send $7 to the other person.",
+        "7.0": "I would keep $6 for myself and send $6 to the other person.",
+        "8.0": "I would keep $7 for myself and send $5 to the other person.",
+        "9.0": "I would keep $8 for myself and send $4 to the other person.",
+        "10.0": "I would keep $9 for myself and send $3 to the other person.",
+        "11.0": "I would keep $10 for myself and send $2 to the other person.",
+        "12.0": "I would keep $11 for myself and send $1 to the other person.",
+        "13.0": "I would keep $12 for myself and send $0 to the other person."
+    },
+    "BLOCK9QID120_W1": {
+        "1.0": "I would keep $0 for myself and send $9 to the other person.",
+        "2.0": "I would keep $1 for myself and send $8 to the other person.",
+        "3.0": "I would keep $2 for myself and send $7 to the other person.",
+        "4.0": "I would keep $3 for myself and send $6 to the other person.",
+        "5.0": "I would keep $4 for myself and send $5 to the other person.",
+        "6.0": "I would keep $5 for myself and send $4 to the other person.",
+        "7.0": "I would keep $6 for myself and send $3 to the other person.",
+        "8.0": "I would keep $7 for myself and send $2 to the other person.",
+        "9.0": "I would keep $8 for myself and send $1 to the other person.",
+        "10.0": "I would keep $9 for myself and send $0 to the other person."
+    },
+    "BLOCK9QID121_W1": {
+        "1.0": "I would keep $0 for myself and send $6 to the other person.",
+        "2.0": "I would keep $1 for myself and send $5 to the other person.",
+        "3.0": "I would keep $2 for myself and send $4 to the other person.",
+        "4.0": "I would keep $3 for myself and send $3 to the other person.",
+        "5.0": "I would keep $4 for myself and send $2 to the other person.",
+        "6.0": "I would keep $5 for myself and send $1 to the other person.",
+        "7.0": "I would keep $6 for myself and send $0 to the other person."
+    },
+    "BLOCK9QID122_W1": {
+        "1.0": "I would keep $0 for myself and send $3 to the other person.",
+        "2.0": "I would keep $1 for myself and send $2 to the other person.",
+        "3.0": "I would keep $2 for myself and send $1 to the other person.",
+        "4.0": "I would keep $3 for myself and send $0 to the other person."
+    },
+    "BLOCK10QID31_W1": {
+        "1.0": "Tightwad (difficulty spending money) 1",
+        "2.0": "2",
+        "3.0": "3",
+        "4.0": "4",
+        "5.0": "5",
+        "6.0": "About the same or neither 6",
+        "7.0": "7",
+        "8.0": "8",
+        "9.0": "9",
+        "10.0": "10",
+        "11.0": "Spendthrift (difficulty controlling spending) 11"
+    },
+    "BLOCK10QID32_W1": {
+        "1.0": "Never",
+        "2.0": "Rarely",
+        "3.0": "Sometimes",
+        "4.0": "Often",
+        "5.0": "Always"
+    },
+    "BLOCK10QID33_W1": {
+        "1.0": "Never",
+        "2.0": "Rarely",
+        "3.0": "Sometimes",
+        "4.0": "Often",
+        "5.0": "Always"
+    },
+    "BLOCK10QID34_W1": {
+        "1.0": "Mr. A 1",
+        "2.0": "2",
+        "3.0": "About the same or neither 3",
+        "4.0": "4",
+        "5.0": "Mr. B 5"
+    },
+    "BLOCK10QID126_W1": {
+        "1.0": "I don't feel sad",
+        "2.0": "I feel sad",
+        "3.0": "I am sad all the time and I can't snap out of it",
+        "4.0": "I am so sad or unhappy that I can't stand it"
+    },
+    "BLOCK10QID128_W1": {
+        "1.0": "I am not particularly discouraged about the future",
+        "2.0": "I feel discouraged about the future",
+        "3.0": "I feel that I have nothing to look forward to",
+        "4.0": "I feel that the future is hopeless and that things cannot improve"
+    },
+    "BLOCK10QID129_W1": {
+        "1.0": "I don't feel like a failure",
+        "2.0": "I feel that I have failed more than the average person",
+        "3.0": "As I look back on my life, all I can see is a lot of failures",
+        "4.0": "I feel I am a complete failure as a person"
+    },
+    "BLOCK10QID130_W1": {
+        "1.0": "I get as much satisfaction out of things as I used to",
+        "2.0": "I don't enjoy things the way I used to",
+        "3.0": "I don't get real satisfaction out of anything anymore",
+        "4.0": "I am dissatisfied or bored with everything"
+    },
+    "BLOCK10QID131_W1": {
+        "1.0": "I don't feel particularly guilty",
+        "2.0": "I feel guilty a good part of the time",
+        "3.0": "I feel guilty most of the time",
+        "4.0": "I feel guilty all the time"
+    },
+    "BLOCK10QID132_W1": {
+        "1.0": "I don't feel I am being punished",
+        "2.0": "I feel I may be punished",
+        "3.0": "I expect to be punished",
+        "4.0": "I feel I am being punished"
+    },
+    "BLOCK10QID133_W1": {
+        "1.0": "I don't feel disappointed in myself",
+        "2.0": "I feel disappointed in myself",
+        "3.0": "I am disgusted with myself",
+        "4.0": "I hate myself"
+    },
+    "BLOCK10QID134_W1": {
+        "1.0": "I don't feel I am worse than anybody else",
+        "2.0": "I am critical of myself for my weaknesses or mistakes",
+        "3.0": "I blame myself all the time for my faults",
+        "4.0": "I blame myself for everything bad that happens"
+    },
+    "BLOCK10QID136_W1": {
+        "1.0": "I don't cry any more than usual",
+        "2.0": "I cry more than I used to",
+        "3.0": "I cry all the time now",
+        "4.0": "I used to be able to cry, but now I can't cry even though I want to"
+    },
+    "BLOCK10QID137_W1": {
+        "1.0": "I am no more irritated now than I ever am",
+        "2.0": "I get annoyed or irritated more easily than I used to",
+        "3.0": "I feel irritated all the time now",
+        "4.0": "I don't get irrirtted at all by the things that used to irritate me"
+    },
+    "BLOCK10QID138_W1": {
+        "1.0": "I have not lost interest in other people",
+        "2.0": "I am less interested in other people than I used to be",
+        "3.0": "I have lost most of my interest in other people",
+        "4.0": "I have lost all of my interest in other people"
+    },
+    "BLOCK10QID139_W1": {
+        "1.0": "I make decisions about as well as I ever could",
+        "2.0": "I put off making decisions more than I used to",
+        "3.0": "I have greater difficulty in making decisions than before",
+        "4.0": "I can't make decisions at all anymore"
+    },
+    "BLOCK10QID140_W1": {
+        "1.0": "I don't feel that I am worthless",
+        "2.0": "I don\u2019t consider myself as worthwhile and useful as I used to",
+        "3.0": "I feel more worthless as compared to other people",
+        "4.0": "I feel utterly worthless"
+    },
+    "BLOCK10QID141_W1": {
+        "1.0": "I can work about as well as before",
+        "2.0": "It takes an extra effort to get started at doing something",
+        "3.0": "I have to push myself very hard to do anything",
+        "4.0": "I can\u2019t do any work at all"
+    },
+    "BLOCK10QID142_W1": {
+        "1.0": "I can sleep as well as usual",
+        "2.0": "I don\u2019t sleep as well as usual",
+        "3.0": "I wake up 1-2 hours earlier than usual and find it hard to get back to sleep",
+        "4.0": "I wake up several hours earlier than I used to and cannot get back to sleep"
+    },
+    "BLOCK10QID143_W1": {
+        "1.0": "I don\u2019t get more tired than usual",
+        "2.0": "I get tired more easily than I used to",
+        "3.0": "I get tired from doing almost anything",
+        "4.0": "I am too tired to do anything"
+    },
+    "BLOCK10QID144_W1": {
+        "1.0": "My appetite is no worse than usual",
+        "2.0": "My appetite is not as good as it used to be",
+        "3.0": "My appetite is much worse now",
+        "4.0": "I have no appetite at all anymore"
+    },
+    "BLOCK10QID145_W1": {
+        "1.0": "I haven\u2019t lost much weight, if any, lately",
+        "2.0": "I have lost more than 5 pounds",
+        "3.0": "I have lost more than 10 pounds",
+        "4.0": "I have lost more than 15 pounds"
+    },
+    "BLOCK10QID146_W1": {
+        "1.0": "I am no more worried about my health than usual",
+        "2.0": "I am worried about physical problems such as aches and pains; or upset stomach; or constipation",
+        "3.0": "I am very worried about physical problems and it\u2019s hard to think of much else",
+        "4.0": "I am so worried about my physical problems that I cannot think about anything else"
+    },
+    "BLOCK10QID147_W1": {
+        "1.0": "I have not noticed any recent change in my interest in sex",
+        "2.0": "I am less interested in sex than I used to be",
+        "3.0": "I am much less interested in sex now",
+        "4.0": "I have lost interest in sex completely"
+    },
+    "BLOCK10QID148_W1": {
+        "1.0": "Yes",
+        "2.0": "No"
+    },
+    "BLOCK11QID221_W1": {
+        "1.0": "A",
+        "2.0": "F",
+        "3.0": "3",
+        "4.0": "7"
+    },
+    "BLOCK12QID231_W1": {
+        "1.0": "$0 for myself, $5 to the other person.",
+        "2.0": "$1 for myself, $4 to the other person.",
+        "3.0": "$2 for myself, $3 to the other person.",
+        "4.0": "$3 for myself, $2 to the other person.",
+        "5.0": "$4 for myself, $1 to the other person.",
+        "6.0": "$5 for myself, $0 to the other person."
+    },
+    "BLOCK15QID158_W1": {
+        "1.0": "I strongly favor program A",
+        "2.0": "I favor program A",
+        "3.0": "I slightly favor program A",
+        "4.0": "I slightly favor program B",
+        "5.0": "I favor program B",
+        "6.0": "I strongly favor program B"
+    },
+    "BLOCK17QID161_W1": {
+        "1.0": "Incorrect, a very bad decision",
+        "2.0": "Incorrect, all things considered",
+        "3.0": "Incorrect, but not unreasonable",
+        "4.0": "The decision and its opposite are equally good",
+        "5.0": "Correct, but the opposite would be reasonable too",
+        "6.0": "Correct, all things considered",
+        "7.0": "Clearly correct, an excellent decision"
+    },
+    "BLOCK18QID163_W1": {
+        "1.0": "more",
+        "2.0": "fewer"
+    },
+    "BLOCK19QID167_W1": {
+        "1.0": "more",
+        "2.0": "less"
+    },
+    "BLOCK20QID173_W1": {
+        "1.0": "Disagree strongly",
+        "2.0": "Disagree a little",
+        "3.0": "Neither agree nor disagree",
+        "4.0": "Agree a little",
+        "5.0": "Agree strongly"
+    },
+    "BLOCK21QID176_W1": {
+        "1.0": "Disagree strongly",
+        "2.0": "Disagree a little",
+        "3.0": "Neither agree nor disagree",
+        "4.0": "Agree a little",
+        "5.0": "Agree strongly"
+    },
+    "BLOCK22QID179_W1": {
+        "1.0": "very unlikely",
+        "2.0": "unlikely",
+        "3.0": "somewhat unlikely",
+        "4.0": "somewhat likely",
+        "5.0": "likely",
+        "6.0": "very likely"
+    },
+    "BLOCK24QID184_W1": {
+        "1.0": "Yes",
+        "2.0": "No"
+    },
+    "BLOCK25QID190_W1": {
+        "1.0": "$10",
+        "2.0": "$100",
+        "3.0": "$1,000",
+        "4.0": "$10,000",
+        "5.0": "$50,000",
+        "6.0": "$100,000",
+        "7.0": "$250,000",
+        "8.0": "$500,000",
+        "9.0": "$1,000,000",
+        "10.0": "$5,000,000 or more"
+    },
+    "BLOCK26QID192_W1": {
+        "1.0": "One million dollars for sure",
+        "2.0": "89% probability of one million dollars 10% probablity of five miillion dollars 1% probability of nothing"
+    },
+    "BLOCK27QID195_W1": {
+        "1.0": "definitely no",
+        "2.0": "no",
+        "3.0": "probably no",
+        "4.0": "probably yes",
+        "5.0": "yes",
+        "6.0": "definitely yes"
+    },
+    "BLOCK29QID291_W1": {
+        "1.0": "I would definitely not take the vaccine. I would thus accept the 10% chance of dying from this flu.",
+        "2.0": "I would probably not take the vaccine. I would thus accept the 10% chance of dying from this flu.",
+        "3.0": "I would probably take the vaccine. I would thus accept the 5% chance of dying from the weaker flu in the vaccine",
+        "4.0": "I would definitely take the vaccine. I would thus accept the 5% chance of dying from the weaker flu in the vaccine."
+    },
+    "BLOCK29QID196_W1": {
+        "1.0": "the small tray",
+        "2.0": "the large tray"
+    },
+    "BLOCK30QID9_1_W1": {
+        "1.0": "Yes, I would purchase the product",
+        "2.0": "No, I would not purchase the product"
+    },
+    "BLOCK30QID9_2_W1": {
+        "1.0": "Yes, I would purchase the product",
+        "2.0": "No, I would not purchase the product"
+    },
+    "BLOCK30QID9_3_W1": {
+        "1.0": "Yes, I would purchase the product",
+        "2.0": "No, I would not purchase the product"
+    },
+    "BLOCK30QID9_4_W1": {
+        "1.0": "Yes, I would purchase the product",
+        "2.0": "No, I would not purchase the product"
+    },
+    "BLOCK30QID9_5_W1": {
+        "1.0": "Yes, I would purchase the product",
+        "2.0": "No, I would not purchase the product"
+    },
+    "BLOCK30QID9_6_W1": {
+        "1.0": "Yes, I would purchase the product",
+        "2.0": "No, I would not purchase the product"
+    },
+    "BLOCK30QID9_7_W1": {
+        "1.0": "Yes, I would purchase the product",
+        "2.0": "No, I would not purchase the product"
+    },
+    "BLOCK30QID9_8_W1": {
+        "1.0": "Yes, I would purchase the product",
+        "2.0": "No, I would not purchase the product"
+    },
+    "BLOCK30QID9_9_W1": {
+        "1.0": "Yes, I would purchase the product",
+        "2.0": "No, I would not purchase the product"
+    },
+    "BLOCK30QID9_10_W1": {
+        "1.0": "Yes, I would purchase the product",
+        "2.0": "No, I would not purchase the product"
+    },
+    "BLOCK30QID9_11_W1": {
+        "1.0": "Yes, I would purchase the product",
+        "2.0": "No, I would not purchase the product"
+    },
+    "BLOCK30QID9_12_W1": {
+        "1.0": "Yes, I would purchase the product",
+        "2.0": "No, I would not purchase the product"
+    },
+    "BLOCK30QID9_13_W1": {
+        "1.0": "Yes, I would purchase the product",
+        "2.0": "No, I would not purchase the product"
+    },
+    "BLOCK30QID9_14_W1": {
+        "1.0": "Yes, I would purchase the product",
+        "2.0": "No, I would not purchase the product"
+    },
+    "BLOCK30QID9_15_W1": {
+        "1.0": "Yes, I would purchase the product",
+        "2.0": "No, I would not purchase the product"
+    },
+    "BLOCK30QID9_16_W1": {
+        "1.0": "Yes, I would purchase the product",
+        "2.0": "No, I would not purchase the product"
+    },
+    "BLOCK30QID9_17_W1": {
+        "1.0": "Yes, I would purchase the product",
+        "2.0": "No, I would not purchase the product"
+    },
+    "BLOCK30QID9_18_W1": {
+        "1.0": "Yes, I would purchase the product",
+        "2.0": "No, I would not purchase the product"
+    },
+    "BLOCK30QID9_19_W1": {
+        "1.0": "Yes, I would purchase the product",
+        "2.0": "No, I would not purchase the product"
+    },
+    "BLOCK30QID9_20_W1": {
+        "1.0": "Yes, I would purchase the product",
+        "2.0": "No, I would not purchase the product"
+    },
+    "BLOCK30QID9_21_W1": {
+        "1.0": "Yes, I would purchase the product",
+        "2.0": "No, I would not purchase the product"
+    },
+    "BLOCK30QID9_22_W1": {
+        "1.0": "Yes, I would purchase the product",
+        "2.0": "No, I would not purchase the product"
+    },
+    "BLOCK30QID9_23_W1": {
+        "1.0": "Yes, I would purchase the product",
+        "2.0": "No, I would not purchase the product"
+    },
+    "BLOCK30QID9_24_W1": {
+        "1.0": "Yes, I would purchase the product",
+        "2.0": "No, I would not purchase the product"
+    },
+    "BLOCK30QID9_25_W1": {
+        "1.0": "Yes, I would purchase the product",
+        "2.0": "No, I would not purchase the product"
+    },
+    "BLOCK30QID9_26_W1": {
+        "1.0": "Yes, I would purchase the product",
+        "2.0": "No, I would not purchase the product"
+    },
+    "BLOCK30QID9_27_W1": {
+        "1.0": "Yes, I would purchase the product",
+        "2.0": "No, I would not purchase the product"
+    },
+    "BLOCK30QID9_28_W1": {
+        "1.0": "Yes, I would purchase the product",
+        "2.0": "No, I would not purchase the product"
+    },
+    "BLOCK30QID9_29_W1": {
+        "1.0": "Yes, I would purchase the product",
+        "2.0": "No, I would not purchase the product"
+    },
+    "BLOCK30QID9_30_W1": {
+        "1.0": "Yes, I would purchase the product",
+        "2.0": "No, I would not purchase the product"
+    },
+    "BLOCK30QID9_31_W1": {
+        "1.0": "Yes, I would purchase the product",
+        "2.0": "No, I would not purchase the product"
+    },
+    "BLOCK30QID9_32_W1": {
+        "1.0": "Yes, I would purchase the product",
+        "2.0": "No, I would not purchase the product"
+    },
+    "BLOCK30QID9_33_W1": {
+        "1.0": "Yes, I would purchase the product",
+        "2.0": "No, I would not purchase the product"
+    },
+    "BLOCK30QID9_34_W1": {
+        "1.0": "Yes, I would purchase the product",
+        "2.0": "No, I would not purchase the product"
+    },
+    "BLOCK30QID9_35_W1": {
+        "1.0": "Yes, I would purchase the product",
+        "2.0": "No, I would not purchase the product"
+    },
+    "BLOCK30QID9_36_W1": {
+        "1.0": "Yes, I would purchase the product",
+        "2.0": "No, I would not purchase the product"
+    },
+    "BLOCK30QID9_37_W1": {
+        "1.0": "Yes, I would purchase the product",
+        "2.0": "No, I would not purchase the product"
+    },
+    "BLOCK30QID9_38_W1": {
+        "1.0": "Yes, I would purchase the product",
+        "2.0": "No, I would not purchase the product"
+    },
+    "BLOCK30QID9_39_W1": {
+        "1.0": "Yes, I would purchase the product",
+        "2.0": "No, I would not purchase the product"
+    },
+    "BLOCK30QID9_40_W1": {
+        "1.0": "Yes, I would purchase the product",
+        "2.0": "No, I would not purchase the product"
+    }
+}
