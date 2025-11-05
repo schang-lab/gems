@@ -431,9 +431,11 @@ For any questions or issues about the paper and implementation, open an issue or
 
 ## Citation
 
+```
 @article{suh2025rethinking,
   title={Rethinking LLM Human Simulation: When a Graph is What You Need},
   author={Suh, Joseph and Moon, Suhong and Chang, Serina},
   journal={arXiv preprint arXiv:2511.02135},
   year={2025}
 }
+```
