@@ -18,6 +18,7 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 from peft import PeftModel
 from tqdm import tqdm
 from vllm import LLM, SamplingParams
+from openai import OpenAI
 
 
 def get_llm_engine(args: argparse.Namespace,
@@ -35,6 +36,8 @@ def get_llm_engine(args: argparse.Namespace,
     """
     assert mode in ["prompting", "agentic_cot"], "--> get_llm_engine(): invalid mode."
     is_prompting = mode == "prompting"
+    if "gpt" in args.base_model_name_or_path:
+        return None, OpenAI()
     llm = LLM(
         model=args.base_model_name_or_path,
         tensor_parallel_size=args.tp_size,

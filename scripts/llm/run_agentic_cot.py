@@ -3,6 +3,7 @@ import re
 import os
 import json
 import pathlib
+from multiprocessing import Pool
 
 from sibyl.utils.logger import start_capture
 from sibyl.utils.llm_utils import get_llm_engine, cli_args_parser
@@ -10,6 +11,29 @@ from sibyl.constants.string_registry_llm import PROMPT_EXPERT, PROMPT_PREDICT_PR
 
 
 ROOT_DIR = pathlib.Path(__file__).resolve().parents[2]
+
+
+def _single_chat_call(args):
+    message, model_name = args
+    call = _client.chat.completions.create(model=model_name, messages=message)
+    return call.choices[0].message.content
+
+def run_external_api_call(messages, client, model_name, num_workers=32):
+    """
+    Run chat completions in parallel using multiprocessing.
+    The order of the returned texts matches the order of `messages`.
+    """
+    global _client
+    _client = client  # make client available in worker processes
+
+    # package arguments for each task
+    task_args = [(msg, model_name) for msg in messages]
+
+    with Pool(processes=num_workers) as pool:
+        # pool.map preserves order of `task_args`
+        return_texts = pool.map(_single_chat_call, task_args)
+
+    return return_texts
 
 
 def run_baseline_agentic_cot(args) -> None:
@@ -43,14 +67,23 @@ def run_baseline_agentic_cot(args) -> None:
         participant_info.append(info)
         reflection_module_input.append([{"role": "user", "content": info + "\n\n" + PROMPT_EXPERT}])
 
-    output = llm.chat(reflection_module_input, sampling_params)
-
-    ### Constructing the predictor module inputs
-    reflection_module_output = []
-    for out in output:
-        # thinking models generate interal <think> ... </think> thoughts, we extract only the final text.
-        text = out.outputs[0].text.split("</think>")[-1].strip()
-        reflection_module_output.append(text)
+    if sampling_params is None: # Openai API case
+        reflection_module_output = run_external_api_call(
+            reflection_module_input,
+            llm,
+            args.base_model_name_or_path
+        )
+    else:
+        output = llm.chat(reflection_module_input, sampling_params)
+        ### Constructing the predictor module inputs
+        reflection_module_output = []
+        for out in output:
+            if 'gpt' in args.base_model_name_or_path.lower():
+                import pdb; pdb.set_trace()
+            else:
+                # thinking models generate interal <think> ... </think> thoughts, we extract only the final text.
+                text = out.outputs[0].text.split("</think>")[-1].strip()
+            reflection_module_output.append(text)
 
     predictor_module_input = []
     for idx in range(len(lines)):
@@ -64,20 +97,32 @@ def run_baseline_agentic_cot(args) -> None:
         )
         predictor_module_input.append([{"role": "user", "content": prompt}])
 
-    # adjust max tokens for generation, considering the text generated from reflection module (step 1)
-    _input = llm.get_tokenizer().apply_chat_template(predictor_module_input,
-                                                     tokenize=True, add_generation_prompt=True)
-    max_len = max([len(tokens) for tokens in _input])
-    sampling_params.max_tokens = llm.llm_engine.model_config.max_model_len - max_len
-    assert sampling_params.max_tokens > 0, "max_tokens for generation should be positive."
-    output = llm.chat(predictor_module_input, sampling_params)
+    if sampling_params is None: # Openai API case
+        output = run_external_api_call(
+            predictor_module_input,
+            llm,
+            args.base_model_name_or_path
+        )
+    else:
+        # adjust max tokens for generation, considering the text generated from reflection module (step 1)
+        _input = llm.get_tokenizer().apply_chat_template(
+            predictor_module_input,
+            tokenize=True, add_generation_prompt=True
+        )
+        max_len = max([len(tokens) for tokens in _input])
+        sampling_params.max_tokens = llm.llm_engine.model_config.max_model_len - max_len
+        assert sampling_params.max_tokens > 0, "max_tokens for generation should be positive."
+        output = llm.chat(predictor_module_input, sampling_params)
 
     ### Process the outputs
     correct_cnts = 0
     all_cnts = 0
     agent_outputs = []
     for idx, out in enumerate(output):
-        out_str = out.outputs[0].text
+        if isinstance(out, str):
+            out_str = out
+        else:
+            out_str = out.outputs[0].text
         agent_outputs.append(out_str)
         # extract json part
         match = re.search(r"\{.*\}", out_str.lower(), re.DOTALL)
@@ -88,7 +133,7 @@ def run_baseline_agentic_cot(args) -> None:
                 correct = (target_label[idx].lower() == _data.get('response', '').strip()[0])
                 correct_cnts += int(correct)
                 all_cnts += 1
-            except json.JSONDecodeError:
+            except:
                 pass
 
     print(f"--> agentic CoT framework: accuracy = {correct_cnts}/{len(lines)} = {correct_cnts/len(lines):.4f}") 

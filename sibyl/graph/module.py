@@ -221,7 +221,8 @@ class MLP(CustomModule):
                  out_dim: int,
                  nonlin_fn: str,
                  p_dropout: float,
-                 n_layers: Optional[int] = 1) -> None:
+                 n_layers: Optional[int] = 1,
+                 print_trainable: bool = True) -> None:
         """
         Args:
             input_dim: Dimension of input features.
@@ -252,7 +253,8 @@ class MLP(CustomModule):
             in_dim = hidden_dim
         layers.append(torch.nn.Linear(in_dim, out_dim))
         self.layers = torch.nn.ModuleList(layers)
-        self.print_trainable_params()
+        if print_trainable:
+            self.print_trainable_params()
 
     def forward(self, x: torch.Tensor) -> torch.Tensor:
         for layer in self.layers[:-1]:
