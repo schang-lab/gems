@@ -1,4 +1,4 @@
-### [GEMS] Rethinking LLM Human Simulation: When a Graph is What You Need
+### [ACL 2026 Long Main] GEMS: Graph-Based Alternatives to LLMs for Human Simulation
 
 <!--- BADGES: START --->
 
